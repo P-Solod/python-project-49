@@ -1,5 +1,7 @@
 import random
+
 from brain_games.cli import welcome_user
+
 
 def main():
     user_name = welcome_user()
@@ -27,9 +29,11 @@ def main():
                 print('Correct!')
                 count += 1
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer was '{flag}'.")
+                print(f"'{answer}' is wrong answer ;(. "
+                      f"Correct answer was '{flag}'.")
                 print(f"Let's try again, {user_name}!")
                 break
+
 
 if __name__ == '__main__':
     main()
