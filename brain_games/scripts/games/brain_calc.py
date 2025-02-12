@@ -1,7 +1,10 @@
+import random
+
+import prompt
+
 from brain_games.scripts.hello_user import weclome_user
 from brain_games.scripts.helper_script import checking_answers
-import random
-import prompt
+
 
 def main():
     name = weclome_user()
@@ -26,6 +29,7 @@ def main():
         if not checking_answers(flag, answer, count, name):
             break
         count += 1
+
 
 if __name__ == '__main__':
     main()

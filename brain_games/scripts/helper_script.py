@@ -1,4 +1,3 @@
-from brain_games.scripts.hello_user import weclome_user
 
 def checking_answers(flag, answer, count, name):
     if answer == flag:
