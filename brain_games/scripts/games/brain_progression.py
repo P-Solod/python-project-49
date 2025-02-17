@@ -26,7 +26,7 @@ def main():
         arithmetic_progression_copy = arithmetic_progression.copy()
         arithmetic_progression_copy[list_item] = ('..')
 
-        print(f'Question: {arithmetic_progression_copy}')
+        print(f'Question: {' '.join(arithmetic_progression_copy)}')
         answer = prompt.integer('Your answer: ')
 
         if not checking_answers(flag, answer, count, name):
