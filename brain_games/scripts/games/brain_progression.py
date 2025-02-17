@@ -24,9 +24,10 @@ def main():
         flag = arithmetic_progression[list_item]
 
         arithmetic_progression_copy = arithmetic_progression.copy()
-        arithmetic_progression_copy[list_item] = ('..')
+        arithmetic_progression_copy[list_item] = '..'
+        question = ' '.join(map(str, arithmetic_progression_copy))
 
-        print(f'Question: {' '.join(arithmetic_progression_copy)}')
+        print(f'Question: {question}')
         answer = prompt.integer('Your answer: ')
 
         if not checking_answers(flag, answer, count, name):
