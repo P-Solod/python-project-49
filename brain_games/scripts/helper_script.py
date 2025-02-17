@@ -13,5 +13,5 @@ def checking_answers(flag, answer, count, name):
     else:
         print(f"'{answer}' is wrong answer ;(. "
               f"Correct answer was '{flag}'.")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
         return False
